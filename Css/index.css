@@ -1,0 +1,60 @@
+/*Header*/
+
+.search-header {
+    width: 50%;
+    border-top-right-radius: 2;
+    border-bottom-right-radius: 2;
+}
+
+.search-1 {
+    width: 100%;
+    height: 46px;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-top: 7%;
+    margin-left: 3%;
+    padding-left: 3%;
+}
+
+
+.search-header:focus {
+    border-radius: 5px;
+}
+
+.logo-search-cart {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 10%;
+}
+
+img {
+    width: 100%;
+    border-radius: 70px;
+}
+
+.header.container {background-color: white;}
+
+.search {
+    width: 50%;
+    position: relative;
+}
+
+input.search-1:focus {
+    border-radius: 0px;
+}
+
+.search svg {
+    position: absolute;
+    left: 97%;
+    top: 48%;
+}
+
+.account {
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+}
