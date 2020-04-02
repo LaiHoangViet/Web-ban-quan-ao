@@ -1,60 +1,340 @@
-/*Header*/
-
-.search-header {
-    width: 50%;
-    border-top-right-radius: 2;
-    border-bottom-right-radius: 2;
+body {
+    font-family: 'Baloo 2', cursive;
 }
 
-.search-1 {
+/*Menu*/
+.icon-menu {
+    margin-left: 31%;
+}
+
+a.navbar-brand.d-none.d-xl-block {
+    margin-left: 20%;
+}
+
+ul.navbar-nav.flex-row {
+    margin-left: 26%;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  width: 359%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 1% 1% 1% 47%;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+  color: rgba(0,0,0,.7);
+}
+
+img.img-shop {
     width: 100%;
+    display: block;
+    background-color: #00a1ff3d;
+    margin-left: 7%;
+    border-radius: 10px;
+}
+
+.shop-1 {
+    display: flex;
+}
+
+.shop-2 {
+    padding: 0% 0% 0% 0%;
+    width: 50%;
+}
+
+.shop-3 {
+    /* margin-left: 0%; */
+}
+
+span.tieu-de-shop {font-weight: 700;font-size: 17px;font-family: 'Baloo 2', cursive;}
+
+.shop-3 a {font-family: 'Baloo 2', cursive;}
+
+a.nav-link.shop-4 {
+    margin-top: 8%;
+    font-size: 20px;
+}
+
+a.nav-link.shop-6 {
+    margin-top: 9%;
+    font-size: 20px;
+}
+
+a.nav-link.shop-5 {
+    margin-top: 24%;
+}
+
+button.dropbtn {
+    color: rgba(0, 0, 0, 0.52);
+    font-size: 20px;
+}
+
+i.fal.fa-home-lg-alt {
+    /* width: 31%; */
+}
+
+a.nav-link.shop-5 {
+    width: 160%;
     height: 46px;
-    position: relative;
-    border-radius: 3px;
-    border: 1px solid;
-    margin-top: 7%;
-    margin-left: 3%;
-    padding-left: 3%;
 }
 
-
-.search-header:focus {
-    border-radius: 5px;
+/*slideshow*/
+.thoitrang-1 img {
+    width: 58%;
+    height: 640px;
+    margin-left: 42%;
 }
 
-.logo-search-cart {
-    display: flex;
-    flex-direction: row;
+.thoitrang-2 {
+    background-color: #3AAFD2;
 }
 
-.logo {
-    width: 10%;
+.thoitrang-3 {
+    background-color: #EBA170;
 }
 
-img {
-    width: 100%;
-    border-radius: 70px;
+.thoitrang-4 {
+    background-color: #F5B1B0;
 }
 
-.header.container {background-color: white;}
-
-.search {
-    width: 50%;
+.thoitrang-1 {
     position: relative;
 }
 
-input.search-1:focus {
-    border-radius: 0px;
-}
-
-.search svg {
+.thoitrang-1 .loi-noi {
     position: absolute;
-    left: 97%;
-    top: 48%;
+    top: 22%;
+    left: 12%;
+    font-size: 30px;
+    width: 30%;
+    font-weight: 600;
+    color: white;
 }
 
-.account {
-    margin-left: 5%;
-    margin-top: 3%;
+/*Men*/
+div#slide-men {
     display: flex;
+    margin: 0%;
+}
+
+.img-men {
+    width: 100%;
+}
+
+.img-men img {
+    width: 98%;
+    height: 613px;
+    border-radius: 16px;
+}
+
+.carousel-inner.men-2 img {
+    width: 112%;
+    /* border: 1px solid; */
+    margin-left: -6%;
+    border-radius: 5px;
+    height: 212px;
+}
+
+.men {
+    margin-top: 3%;
+    width: 96%;
+    margin-left: 4%;
+}
+
+.men-1 {
+    position: relative;
+    width: 50%;
+    height: 346px;
+}
+
+.men-1 a.carousel-control-prev {
+    height: 47px;
+    width: 9%;
+    position: absolute;
+    top: 2%;
+    left: 77%;
+    background-color: #bd2130;
+    border-radius: 34px;
+}
+
+
+.men-1 a.carousel-control-next {
+    position: absolute;
+    /* bottom: 55%; */
+    top: 2%;
+    right: 3%;
+    background-color: #bd2130;
+    border-radius: 34px;
+    height: 47px;
+    width: 9%;
+}
+
+.col.men4 {
+    /* border: 1px solid; */
+    margin: 1% 2% 1% 2%;
+    display: grid;
+    text-align: center;
+    border-radius: 5px;
+    /* -webkit-box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63); */
+    -moz-box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63);
+    /* box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63); */
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.carousel-inner.men-2 {
+    width: 81%;
+}
+
+i.fal.fa-usd-circle {
+    padding-right: 5%;
+}
+
+span.tien {
+    font-size: 24px;
+}
+.col.men4 a {
+    font-size: 27px;
+    color: black;
+}
+
+.col.men4 a:hover {
+    text-decoration: none;
+}
+
+.col.men4:hover {
+    box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63);
+}
+
+/*Women*/
+div#slide-women {
+    display: flex;
+}
+
+.img-women {
+    width: 100%;
+}
+
+.img-women img {
+    width: 98%;
+    height: 613px;
+    border-radius: 16px;
+}
+
+.carousel-inner.women-2 img {
+    width: 112%;
+    /* border: 1px solid; */
+    margin-left: -6%;
+    border-radius: 5px;
+    height: 212px;
+}
+
+.women {
+    margin-top: 4%;
+    width: 96%;
+    margin-left: 2%;
+    display:flex;
+    position: relative;
+}
+
+.women-1 {
+    position: relative;
+    width: 50%;
+    height: 346px;
+}
+
+.women-1 a.carousel-control-prev {
+    height: 47px;
+    width: 9%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: #bd2130;
+    border-radius: 34px;
+}
+
+
+.women-1 a.carousel-control-next {
+    position: absolute;
+    /* bottom: 55%; */
+    top: 2%;
+    right: 78%;
+    background-color: #bd2130;
+    border-radius: 34px;
+    height: 47px;
+    width: 9%;
+}
+
+.col.women4 {
+    /* border: 1px solid; */
+    margin: 1% 2% 1% 2%;
+    display: grid;
+    text-align: center;
+    border-radius: 5px;
+    /* -webkit-box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63); */
+    -moz-box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63);
+    /* box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63); */
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.carousel-inner.women-2 {
+    width: 81%;
+}
+
+i.fal.fa-usd-circle {
+    padding-right: 5%;
+}
+
+span.tien {
+    font-size: 24px;
+}
+.col.women4 a {
+    font-size: 27px;
+    color: black;
+}
+
+.col.women4 a:hover {
+    text-decoration: none;
+}
+
+.col.women4:hover {
+    box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63);
+}
+
+.women h3 {position: absolute;right: 13%;font-size: -webkit-xxx-large;}
+
+.men h3 {
+    font-size: -webkit-xxx-large;
+    margin-left: 13%;
 }
