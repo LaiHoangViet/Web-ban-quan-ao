@@ -2,6 +2,23 @@ body {
     font-family: 'Baloo 2', cursive;
 }
 
+.header {
+    height: 90px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+}
+
+.header.active{
+    height: 75px;
+    -webkit-box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+    box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+}
+
 /*Menu*/
 .icon-menu {
     margin-left: 31%;
@@ -9,6 +26,8 @@ body {
 
 a.navbar-brand.d-none.d-xl-block {
     margin-left: 20%;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 ul.navbar-nav.flex-row {
@@ -37,7 +56,7 @@ ul.navbar-nav.flex-row {
   width: 359%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 1% 1% 1% 47%;
+  padding: 1% 1% 1% 64%;
 }
 
 .dropdown-content a {
@@ -117,6 +136,10 @@ a.nav-link.shop-5 {
     margin-left: 42%;
 }
 
+.slide-thoi-trang {
+    margin-top: 6%;
+}
+
 .thoitrang-2 {
     background-color: #3AAFD2;
 }
@@ -185,7 +208,7 @@ div#slide-men {
     position: absolute;
     top: 2%;
     left: 77%;
-    background-color: #bd2130;
+    background-color: #007bff;
     border-radius: 34px;
 }
 
@@ -195,7 +218,7 @@ div#slide-men {
     /* bottom: 55%; */
     top: 2%;
     right: 3%;
-    background-color: #bd2130;
+    background-color: #007bff;
     border-radius: 34px;
     height: 47px;
     width: 9%;
@@ -280,7 +303,7 @@ div#slide-women {
     position: absolute;
     top: 2%;
     left: 2%;
-    background-color: #bd2130;
+    background-color: #007bff;
     border-radius: 34px;
 }
 
@@ -290,7 +313,7 @@ div#slide-women {
     /* bottom: 55%; */
     top: 2%;
     right: 78%;
-    background-color: #bd2130;
+    background-color: #007bff;
     border-radius: 34px;
     height: 47px;
     width: 9%;
@@ -337,4 +360,237 @@ span.tien {
 .men h3 {
     font-size: -webkit-xxx-large;
     margin-left: 13%;
+}
+
+a.tieu-de-shop {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+a.tieu-de-shop:hover {
+    background-color: white;
+}
+
+/*cart*/
+.do-mua-1 img {
+    width: 50%;
+}
+
+.do-mua-1 {
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+span.tensanpham {
+    display: flex;
+    width: 194%;
+}
+
+.dropdown-menu.show {
+}
+
+.tensanpham-tiensanpham {
+    width: 25%;
+    margin-top: 9%;
+    position: relative;
+}
+
+.dropdown .dropdown-menu.show {
+    min-width: 17rem;
+    margin: 1.3rem 0 0 -8rem;
+}
+
+i#dropdownMenuButton {
+    margin-top: 60%;
+    color: #8e8e8e;
+}
+
+.thanh-tien {/* position: relative; */margin-top: 2%;}
+
+span.thanhtien2 {
+
+    /* width: 58%; */
+
+    margin-left: 54%;
+}
+
+.thanhtien4 {
+    background-color: aqua;
+    margin-bottom: -3%;
+    border-radius: 3px;
+    margin-top: 5%;
+}
+
+a.thanhtien3 {
+    font-size: 20px;
+    margin-left: 32%;
+    color: black;
+}
+
+input.soluong {
+    width: 70%;
+    border-radius: 3px;
+    border: 1px solid;
+    position: absolute;
+    left: 80%;
+    top: 22%;
+    padding-left: 6px;
+}
+
+input.soluong:focus {
+    border-radius: 3px;
+}
+
+i.fal.fa-minus-circle {
+    position: absolute;
+    top: -18%;
+    font-size: 23px;
+    left: 153%;
+}
+
+i.fal.fa-minus-circle:hover {
+    color: #ff7f7f;
+}
+
+a.thanhtien3:hover {
+    text-decoration: none;
+}
+.col.bosuutap1 img {
+    width: 98%;
+    display: block;
+    margin-bottom: 3%;
+}
+
+.row.bosuutap {
+    width: 94.8%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+a.ten-bosuutap {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.bo-suu-tap {
+    width: 100%;
+    /* margin-left: 0%; */
+    margin-top: 5%;
+    background: #007bff52;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+a.ten-bosuutap:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bo-suu-tap h3 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight: 900;
+}
+
+.xemthembosuutap a {
+    color: black;
+    font-size: 27px;
+    background-color: #f8f9fa;
+    /* padding: 0.5% 0.5% 0.5% 0.5%; */
+    border-radius: 3px;
+    padding: 0px 10px 0 10px;
+}
+
+.xemthembosuutap {
+    /* background-color: #f8f9fa; */
+    width: 10%;
+    /* padding: 0.5% 0.5% 0.5% 0.5%; */
+    text-align: center;
+    /* margin-top: 1%; */
+    margin: 0 auto;
+}
+
+.xemthembosuutap a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+}
+
+/*Nhan thong tin*/
+.nhanthongtin input {
+    display: block;
+    width: 40%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.nhanthongtin {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.nhanthongtin a {
+    /* margin-top: 5%; */
+    color: black;
+    font-weight: 500;
+    font-size: 27px;
+    border-radius: 3px;
+    background-color: #007bff;
+    padding: 0px 10px 0 10px;
+}
+
+.nhanthongtin a:hover {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #f8f9fa;
+}
+
+.nhanthongtin input:focus {
+    outline: none !important;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+/*footer*/
+.col.footer6 {display: grid;margin-left: 6%;}
+
+.footer {
+    width: 99%;
+}
+
+.col.footer2 {
+    display: grid;
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+
+.footer {
+    padding-left: 5%;
+    margin-top: 3%;
+}
+
+.col.footer1 {
+    display: grid;
+    margin-left: 9%;
+}
+
+.footer7 {
+    border: 1px solid;
+    width: 98%;
+    margin-left: -2%;
+}
+
+span.tieudefooter {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+a.footer1 {
+    color: black;
 }

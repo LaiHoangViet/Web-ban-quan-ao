@@ -10,7 +10,7 @@
 </head>
 <body>
 	<!-- Header -->
-	<div class="header">
+	<div class="header fixed-top">
 		<!-- Logo menu cart -->
 		<div class="menu container">
 			<nav class="navbar navbar-expand-xl navbar-light @@classList">
@@ -23,7 +23,7 @@
 									<div class="shop-1">
 										<div class="shop-2">
 											<div class="shop-3">
-												<span class="tieu-de-shop">Đàn ông</span>
+												<a class="tieu-de-shop" href="#">Đàn ông</a>
 												<a href="#">Áo</a>
 												<a href="#">Quần</a>
 												<a href="#">Giầy</a>
@@ -32,7 +32,7 @@
 										</div>
 										<div class="shop-2">
 											<div class="shop-4">
-												<span class="tieu-de-shop">Phụ nữ</span>
+												<a class="tieu-de-shop" href="#">Phụ nữ</a>
 												<a href="#">Áo</a>
 												<a href="#">Quần</a>
 												<a href="#">Giầy</a>
@@ -43,15 +43,7 @@
 									<div class="shop-1">
 										<div class="shop-2">
 											<div class="shop-3">
-												<span class="tieu-de-shop">Trẻ con</span>
-												<a href="#">Áo</a>
-												<a href="#">Quần</a>
-												<a href="#">Giầy</a>
-											</div>
-										</div>
-										<div class="shop-2">
-											<div class="shop-3">
-												<span class="tieu-de-shop">Phụ kiện</span>
+												<a class="tieu-de-shop" href="#">Phụ kiện</a>
 												<a href="#">Ba lô</a>
 												<a href="#">Mũ</a>
 												<a href="#">Kính</a>
@@ -84,11 +76,45 @@
 							</a>
 						</li>
 						<li class="nav-item icon-menu">
-							<a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
-								<span data-cart-items="2">
-									<i class="fal fa-shopping-cart"></i>
-								</span>
-							</a>
+							<div class="dropdown">
+								<i class="fal fa-shopping-cart" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </i>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<div class="do-mua-1">
+										<img src="./Img/anh12.jpg">
+										<div class="tensanpham-tiensanpham">
+											<span class="tensanpham">Giầy</span>
+											<span class="tiensanpham"><i class="fal fa-usd-circle"></i>80</span> *
+											<input type="number" value="1" class="soluong">
+											<i class="fal fa-minus-circle"></i>
+										</div>
+									</div>
+									<div class="do-mua-1">
+										<img src="./Img/anh13.jpg">
+										<div class="tensanpham-tiensanpham">
+											<span class="tensanpham">Dép</span>
+											<span class="tiensanpham"><i class="fal fa-usd-circle"></i>80</span> * 
+											<input type="number" value="1" class="soluong">
+											<i class="fal fa-minus-circle"></i>
+										</div>
+									</div>
+									<div class="do-mua-1">
+										<img src="./Img/anh14.jpg">
+										<div class="tensanpham-tiensanpham">
+											<span class="tensanpham">Quần sooc</span>
+											<span class="tiensanpham"><i class="fal fa-usd-circle"></i>80</span> *
+											<input type="number" value="1" class="soluong">
+											<i class="fal fa-minus-circle"></i>
+										</div>
+									</div>
+									<div class="thanh-tien">
+										<span class="thanhtien1">Tổng tiền</span>
+										<span class="thanhtien2"><i class="fal fa-usd-circle"></i>80</span>
+									</div>
+									<div class="thanhtien4">
+										<a href="#" class="thanhtien3">Thanh toán</a>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -360,8 +386,66 @@
 		<h3>Women</h3>
 	</div>
 
+	<!-- Bộ sưu tập -->
+	<div class="bo-suu-tap">
+		<h3>Hãy cùng Shopper làm nổi bật bạn</h3>
+		<div class="row bosuutap">
+			<div class="col bosuutap1">
+				<img src="./Img/anh22.jpg">
+				<a href="#" class="ten-bosuutap">Áo khoác nỉ nam Legend và quần bò</a>
+			</div>
+			<div class="col bosuutap1">
+				<img src="./Img/anh23.jpg">
+				<a href="#" class="ten-bosuutap">Áo khoác nỉ nam Legend và quần bò</a>
+			</div>
+			<div class="col bosuutap1">
+				<img src="./Img/anh24.jpg">
+				<a href="#" class="ten-bosuutap">Tee nữ starwar pattern</a>
+			</div>
+			<div class="col bosuutap1">
+				<img src="./Img/anh25.jpg">
+				<a href="#" class="ten-bosuutap">Áo phông logo mickey loose mickey vibes</a>
+			</div>
+		</div>
+		<div class="xemthembosuutap">
+			<a href="#">Xem thêm</a>
+		</div>
+	</div>
+
+	<!-- Nhan thong tin tu Shopper -->
+	<div class="nhanthongtin">
+		<h2>Nhận thông tin mới nhất từ Shopper</h2>
+		<input type="text" placeholder="Nhập email của bạn" class="nhanthongtin1">
+		<a href="#">Đăng ký</a>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer7"></div>
+		<div class="row">
+			<div class="col footer2">
+				<span class="footer3"><b>Văn phòng làm việc:</b> Tầng 9, tòa nhà Kim Khí Thăng Long, số 1 Lương Yên, phường Bạch Đằng, quận Hai Bà Trưng, thành phố Hà Nội, Việt Nam.</span>
+				<span class="footer4"><b>Điện thoại:</b> (+84) 024 3978 5426 máy lẻ 121/122</span>
+				<span class="footer5"><b>E-mail:</b> online@shopper.vn</span>
+			</div>
+			<div class="col footer1">
+				<span class="tieudefooter">Chính sách</span>
+				<a href="#" class="footer1">Thanh toán & Vận chuyển</a>
+				<a href="#" class="footer1">Đổi/trả & Hoàn tiền</a>
+				<a href="#" class="footer1">Bảo mật & Chia sẻ thông tin</a>
+			</div>
+			<div class="col footer6">				
+				<span class="tieudefooter">Mạng xã hội</span>
+				<a href="#" class="footer1">Facebook</a>
+				<a href="#" class="footer1">Instagram</a>
+				<a href="#" class="footer1">Youtube</a></div>
+			
+		</div>
+	</div>
+
 	<!-- Jquery -->
-	<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="./Js/cuon-trang.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
