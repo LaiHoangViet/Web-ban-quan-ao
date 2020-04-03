@@ -20,6 +20,10 @@ body {
 }
 
 /*Menu*/
+.shop-2:nth-child(2) {
+    margin-left: 20%;
+}
+
 .icon-menu {
     margin-left: 31%;
 }
@@ -49,14 +53,14 @@ ul.navbar-nav.flex-row {
 }
 
 .dropdown-content {
-  display: none;
+   display: none; 
   position: absolute;
   background-color: #f9f9f9;
   /* min-width: 160px; */
   width: 359%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 1% 1% 1% 64%;
+  padding: 1% 1% 1% 17%;
 }
 
 .dropdown-content a {
@@ -89,8 +93,9 @@ img.img-shop {
 }
 
 .shop-2 {
-    padding: 0% 0% 0% 0%;
+    /* padding: 0% 0% 0% 0%; */
     width: 50%;
+    margin-left: 6%;
 }
 
 .shop-3 {
@@ -173,11 +178,11 @@ div#slide-men {
 }
 
 .img-men {
-    width: 100%;
+    width: 88%;
 }
 
 .img-men img {
-    width: 98%;
+    width: 100%;
     height: 613px;
     border-radius: 16px;
 }
@@ -194,20 +199,21 @@ div#slide-men {
     margin-top: 3%;
     width: 96%;
     margin-left: 4%;
+    position: relative;
 }
 
 .men-1 {
-    position: relative;
+    /* position: relative; */
     width: 50%;
     height: 346px;
 }
 
 .men-1 a.carousel-control-prev {
-    height: 47px;
-    width: 9%;
+    height: 42px;
+    width: 3%;
     position: absolute;
-    top: 2%;
-    left: 77%;
+    top: 44%;
+    left: 32%;
     background-color: #007bff;
     border-radius: 34px;
 }
@@ -216,12 +222,12 @@ div#slide-men {
 .men-1 a.carousel-control-next {
     position: absolute;
     /* bottom: 55%; */
-    top: 2%;
-    right: 3%;
+    top: 44%;
+    right: 2%;
     background-color: #007bff;
     border-radius: 34px;
-    height: 47px;
-    width: 9%;
+    height: 42px;
+    width: 3%;
 }
 
 .col.men4 {
@@ -238,6 +244,7 @@ div#slide-men {
 
 .carousel-inner.men-2 {
     width: 81%;
+    margin-right: 6%;
 }
 
 i.fal.fa-usd-circle {
@@ -261,12 +268,17 @@ span.tien {
 }
 
 /*Women*/
+div#slide-wonmen {
+    margin-top: 5%;
+}
+
 div#slide-women {
     display: flex;
 }
 
 .img-women {
-    width: 100%;
+    width: 88%;
+    margin-left: 11%;
 }
 
 .img-women img {
@@ -284,7 +296,7 @@ div#slide-women {
 }
 
 .women {
-    margin-top: 4%;
+    margin-top: 5%;
     width: 96%;
     margin-left: 2%;
     display:flex;
@@ -292,17 +304,17 @@ div#slide-women {
 }
 
 .women-1 {
-    position: relative;
+    /* position: relative; */
     width: 50%;
     height: 346px;
 }
 
 .women-1 a.carousel-control-prev {
-    height: 47px;
-    width: 9%;
+    height: 41px;
+    width: 3%;
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 45%;
+    left: 0%;
     background-color: #007bff;
     border-radius: 34px;
 }
@@ -311,12 +323,12 @@ div#slide-women {
 .women-1 a.carousel-control-next {
     position: absolute;
     /* bottom: 55%; */
-    top: 2%;
-    right: 78%;
+    top: 45%;
+    right: 33%;
     background-color: #007bff;
     border-radius: 34px;
-    height: 47px;
-    width: 9%;
+    height: 42px;
+    width: 3%;
 }
 
 .col.women4 {
@@ -333,6 +345,7 @@ div#slide-women {
 
 .carousel-inner.women-2 {
     width: 81%;
+    margin-left: 4%;
 }
 
 i.fal.fa-usd-circle {
@@ -355,11 +368,12 @@ span.tien {
     box-shadow: 0px 3px 12px 1px rgba(0,0,0,0.63);
 }
 
-.women h3 {position: absolute;right: 13%;font-size: -webkit-xxx-large;}
+.women h3 {position: absolute;right: 41%;font-size: -webkit-xxx-large;}
 
 .men h3 {
     font-size: -webkit-xxx-large;
-    margin-left: 13%;
+    /* margin-left: 13%; */
+    text-align: center;
 }
 
 a.tieu-de-shop {
@@ -519,10 +533,12 @@ a.ten-bosuutap:hover {
 
 /*Nhan thong tin*/
 .nhanthongtin input {
-    display: block;
+    /* display: block; */
     width: 40%;
-    border: 0;
-    border-bottom: 2px solid #ccc;
+    border: 2px solid #007bff;
+    /* border-bottom: 2px solid #ccc; */
+    border-radius: 5px;
+    height: 45px;
     text-align: center;
     font-size: 18px;
     margin: 0 auto;
@@ -533,16 +549,20 @@ a.ten-bosuutap:hover {
 .nhanthongtin {
     text-align: center;
     margin-top: 3%;
+    position: relative;
 }
 
 .nhanthongtin a {
-    /* margin-top: 5%; */
+    /* margin-left: -8%; */
+    position: absolute;
+    top: 51%;
+    right: 30%;
     color: black;
     font-weight: 500;
     font-size: 27px;
     border-radius: 3px;
     background-color: #007bff;
-    padding: 0px 10px 0 10px;
+    padding: 1px 10px 3px 10px;
 }
 
 .nhanthongtin a:hover {
@@ -553,12 +573,12 @@ a.ten-bosuutap:hover {
 
 .nhanthongtin input:focus {
     outline: none !important;
-    border: 0;
-    border-bottom: 2px solid #ccc;
+    /* border: 0; */
+    /* border-bottom: 2px solid #ccc; */
 }
 
 /*footer*/
-.col.footer6 {display: grid;margin-left: 6%;}
+.col.footer6 {display: grid;margin-left: 4%;}
 
 .footer {
     width: 99%;
@@ -566,13 +586,17 @@ a.ten-bosuutap:hover {
 
 .col.footer2 {
     display: grid;
-    margin-left: 7%;
+    margin-left: 5%;
     margin-top: 0.5%;
 }
 
 .footer {
     padding-left: 5%;
     margin-top: 3%;
+    background-color: #007bff;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .col.footer1 {
@@ -593,4 +617,8 @@ span.tieudefooter {
 
 a.footer1 {
     color: black;
+}
+
+.footer .row {
+    margin-right: 0%;
 }
